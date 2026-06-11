@@ -1,0 +1,28 @@
+spring.application.name=api
+
+# Banco de dados
+spring.datasource.url=jdbc:postgresql://localhost:5432/musicapp
+spring.datasource.username=musicapp
+spring.datasource.password=
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# Servidor
+server.port=8080
+
+# Spotify OAuth2
+spring.security.oauth2.client.registration.spotify.client-id=
+spring.security.oauth2.client.registration.spotify.client-secret=
+spring.security.oauth2.client.registration.spotify.redirect-uri=http://localhost:8080/callback
+spring.security.oauth2.client.registration.spotify.scope=user-top-read,user-read-recently-played,user-read-email
+spring.security.oauth2.client.registration.spotify.authorization-grant-type=authorization_code
+spring.security.oauth2.client.registration.spotify.client-name=Spotify
+
+spring.security.oauth2.client.provider.spotify.authorization-uri=https://accounts.spotify.com/authorize
+spring.security.oauth2.client.provider.spotify.token-uri=https://accounts.spotify.com/api/token
+spring.security.oauth2.client.provider.spotify.user-info-uri=https://api.spotify.com/v1/me
+spring.security.oauth2.client.provider.spotify.user-name-attribute=id

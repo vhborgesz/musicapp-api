@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=musicapp'
+      - 'POSTGRES_PASSWORD=34126301'
+      - 'POSTGRES_USER=musicapp'
+    ports:
+      - '5432:5432'
