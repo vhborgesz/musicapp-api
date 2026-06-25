@@ -26,3 +26,15 @@ spring.security.oauth2.client.provider.spotify.authorization-uri=https://account
 spring.security.oauth2.client.provider.spotify.token-uri=https://accounts.spotify.com/api/token
 spring.security.oauth2.client.provider.spotify.user-info-uri=https://api.spotify.com/v1/me
 spring.security.oauth2.client.provider.spotify.user-name-attribute=id
+
+# Spotify (customizado para fluxo manual)
+spotify.client-id=
+spotify.client-secret=
+spotify.redirect-uri=http://127.0.0.1:8080/auth/spotify/callback
+
+# JWT
+jwt.secret=
+jwt.expiration=86400000
+
+# Last.fm (opcional - obter em https://www.last.fm/api/account/create)
+lastfm.api-key=
